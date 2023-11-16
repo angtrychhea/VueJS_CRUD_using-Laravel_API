@@ -33,7 +33,7 @@ import { RouterLink } from 'vue-router';
                             <td>{{ student.phone }}</td>
                             <td>{{ student.created_at }}</td>
                             <td>
-                                <RouterLink to="/" class="btn btn-success">
+                                <RouterLink :to="{ path: '/student/'+student.id+'/edit' }" class="btn btn-success">
                                     Edit
                                 </RouterLink>
                                 <button type="button" class="btn btn-danger">
